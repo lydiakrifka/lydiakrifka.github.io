@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Seina";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/seina-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Seina";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/seina-italic.woff2") format("woff2");
+}
+
+:root {
+  --font-serif: "Seina", serif;
+  --font-swash: "Seina", serif;
+  --font-swash--font-feature-settings: "ss01";
+  --color-red: #ff4d00;
+  --color-blue: #007bff;
+  --color-pink: #ff88e2;
+  --color-green: #007500;
+  --color-lavender: #c3c8ff;
+  --color-olive: #cbc900;
+}
+
+/* Example usage for body */
+body {
+  font-family: "Seina", serif;
+}
+
+

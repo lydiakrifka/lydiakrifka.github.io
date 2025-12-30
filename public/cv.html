@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html id="theDocument">
+	<head>
+	<title>Lydia Krifka-Dobes - CV</title>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="description" content="Curriculum Vitae of Lydia Krifka-Dobes."/>
+	<meta charset="UTF-8"> 
+	<link rel="icon" href="./src/favicon.svg" type="image/x-icon" />
+	<link type="text/css" rel="stylesheet" href="cv-style.css">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+		function darkToggle() {
+		    var checkBox = document.getElementById("dmToggle");
+		    var theDocument = document.getElementById("theDocument");
+		    let toggleText = document.getElementById("toggleText");
+			  if (checkBox.checked == true){
+			    addClass(theDocument, 'darkMode');
+			    toggleText.innerHTML="Light Mode";
+			  } else {
+			    removeClass(theDocument, 'darkMode');
+			    toggleText.innerHTML="Dark Mode";
+			  }
+		}
+		function hasClass(ele,cls) {
+			  return !!ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+			}
+			function addClass(ele,cls) {
+			  if (!hasClass(ele,cls)) ele.className += " "+cls;
+			}
+			function removeClass(ele,cls) {
+			  if (hasClass(ele,cls)) {
+			    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+			    ele.className=ele.className.replace(reg,' ');
+			  }
+		}
+	</script>
+	</head>
+	<body id="top">
+		<div id="cv" class="instaFade">
+			<div class="mainDetails">
+				<div id="headshot" class="quickFade">
+					<img src="./src/images/_DSC6046.JPG" alt="Lydia Krifka-Dobes" />
+				</div>
+				
+				<div id="name">
+					<h1 class="quickFade delayTwo">Lydia Krifka-Dobes</h1>
+					<h2 class="quickFade delayThree">Sound Artist // Computer Musician</h2>
+				</div>
+				
+				<div id="contactDetails" class="quickFade delayFour">
+					<ul>
+					    <li>w: <a href="https://lydiakrifka.github.io/">lydiakrifka.github.io</a></li>
+						<li>e: <a href="/cdn-cgi/l/email-protection#64081d000d050f160d020f05240309050d084a070b09" target="_blank"><span class="__cf_email__" data-cfemail="ef83968b868e849d8689848eaf88828e8683c18c8082">[email&#160;protected]</span></a></li>
+						<li>📞: +49 1709892923</li>
+						<li>🌐: Berlin, DE</li>
+					</ul>
+					<br><br>
+					<div class="dmContainer">
+						<span id="toggleText">Dark Mode</span>
+						<label class="switch">
+		  					<input id="dmToggle" type="checkbox" onclick="darkToggle()">
+		  						<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="mainArea" class="quickFade delayFive">
+				<section>
+					<article>
+						<div class="sectionTitle">
+							<h1>About</h1>
+						</div>
+						
+						<div class="sectionContent">
+							<p>Lydia Krifka-Dobes is a researcher, sound artist and computer musician who actively investigates the alternative creativity of computational intelligence in sound. Through autonomous musical systems that interact and improvise with human collaborators in multichannel contexts, she explores how human and machine perceptions diverge, shaping distinct artistic interpretations and decisions. Her ongoing research is taking place in Sound & Music Computation at Music Technology Group Barcelona where she works on Systems & Multimedia architecture with C++ / Vulkan / DSP / Concurrency.</p>
+						</div>
+					</article>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<div class="sectionTitle">
+						<h1>Technical Skills</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<ul class="keySkills">
+							<li>C/C++20/23</li>
+							<li>Python</li>
+							<li>Linux (Arch/BSD)</li>
+							<li>MacOS</li>
+							<li>Git</li>
+							<li>Docker</li>
+							<li>SuperCollider</li>
+							<li>Max/MSP</li>
+							<li>PureData</li>
+							<li>CSound</li>
+							<li>JUCE</li>
+							<li>Reaper</li>
+							<li>Ableton Live</li>
+							<li>Vulkan</li>
+							<li>OpenGL</li>
+							<li>GLSL/WebGL</li>
+							<li>OpenCL</li>
+							<li>Intel TBB</li>
+							<li>OpenCV</li>
+							<li>PyTorch</li>
+							<li>librosa</li>
+							<li>HuggingFace</li>
+							<li>Arduino</li>
+							<li>OSC/MIDI</li>
+							<li>Kinect/LeapMotion</li>
+							<li>KiCad/PCB</li>
+							<li>Fusion360</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Education</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Universitat Pompeu Fabra (UPF) | Barcelona, Spain</h2>
+							<p class="subDetails">M.Eng. Sound and Music Computing - 2025–2026</p>
+							<p>Music Technology Group with Prof. Xavier Serra</p>
+							<p><strong>Coursework:</strong> Music Generation with Neural Networks, Machine Learning for Audio, Music Information Retrieval</p>
+						</article>
+						
+						<article>
+							<h2>Institute of Sonology | The Hague, Netherlands</h2>
+							<p class="subDetails">B.Mus., Sonology (Computer Music) - 2020-2025</p>
+							<p><strong>Key Courses:</strong> Signal Processing (Analysis & Resynthesis, Physical Modeling, Convolution, Transformation algorithms), Musical Controllers (Analog electronics, controller & interface design, sensor data extraction and manipulation), Sound and Space (WaveField Synthesis, cultural and philosophical theories of space)</p>
+							<p><strong>Research:</strong> Interdisciplinary contextualization of electronic music: Study of interactive media improvisation, developing C++ libraries for gesture tracking and synthesis algorithms</p>
+							<p><strong>Bachelor's Thesis:</strong> Wandering the Sounds of Languages (2025)</p>
+						</article>
+						
+						<article>
+							<h2>Conservatory Olomouc | Olomouc, Czechia</h2>
+							<p class="subDetails">B.A. (Honours) Music and Sound - 2014–2017</p>
+							<p>Sound Spatialization Research (thesis), Sound Engineering, Studio techniques, Mixing & Mastering, Composition for moving image, Library music, Gregorian Chant, Violin performance</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Experience</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Selected Artist | <a class="noLink" href="https://www.labiennale.org/">La Biennale di Venezia Musica</a></h2>
+							<p class="subDetails">Venice, Italy - 2023</p>
+							<p><em>Wandering the Piano:</em> 16-channel ambisonic installation exploring piano mechanics through 64 infrared sensors and K-means clustering of 10,000 piano samples. Premiered under curator Lucia Ronchetti with supervision by Miller Puckette and Gerfried Stocker (Ars Electronica).</p>
+						</article>
+						
+						<article>
+							<h2>Research Intern | <a class="noLink" href="https://www.leibniz-zas.de/en/">Leibniz-Centre General Linguistics</a></h2>
+							<p class="subDetails">Berlin, Germany - 2023–2025</p>
+							<p>Research with Prof. Dr. Marzena Żygis. Contributed to ATTIT project on implicit and explicit attitudes toward foreign language accents in German-Polish contexts. Analyzed whispered speech acoustics and facial expressions using spectral analysis. Developed multi-threaded real-time processing pipeline using C++ and OpenCV for facial movement analysis.</p>
+						</article>
+						
+						<article>
+							<h2>Research Assistant | <a class="noLink" href="https://www.mpib-berlin.mpg.de/en">Max Planck Institute for Human Development</a></h2>
+							<p class="subDetails">Berlin, Germany - 2018</p>
+							<p>Research with Prof. Dr. Gerd Gigerenzer. Built sonification and data visualization pipelines for risk education for the public. Developed statistical analysis tools using openFrameworks for interactive data exploration of false positives. Edited campaign project for high school statistics education.</p>
+						</article>
+						
+						<article>
+							<h2>Audio Intern | <a class="noLink" href="https://vertigo-games.com/">Vertigo Games</a></h2>
+							<p class="subDetails">Rotterdam, Netherlands - 2024</p>
+							<p>Hands-on experience with VR, collision SFX, locomotion SFX. Audio implementation using Unreal Engine.</p>
+						</article>
+						
+						<article>
+							<h2>Marketing Intern | <a class="noLink" href="https://www.ableton.com/">Ableton</a></h2>
+							<p class="subDetails">Berlin, Germany - 2018</p>
+							<p>Created interactive audiovisual media content for marketing and outreach team using Blender and layering of short microsounds from recording sessions with DJs.</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Extra-<br>curriculars</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Various roles</h2>
+							<p class="subDetails">2020 – 2024</p>
+							<p>Participated in an Enactus Startup, RotterJam. I led our sales strategy, creating growth in sales through envisioning two new sales channels.</p>
+							<p>I am a competitive lightweight university rower, training 9 times a week to participate on a national level.</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Volunteer Work</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Volunteer | <a class="noLink" href="https://worldservants.org/">World Servants</a></h2>
+							<p class="subDetails">Malawi, Germany, Netherlands - 2017–2021</p>
+							<p>Solved fundraising problems through initiative taking and creative thinking – I orchestrated benefit dinners, sold wine, etc. Ultimately, we raised ~€150,000 collectively, and I am proud and happy that we managed to provide a better future to young children in Makonje, Malawi through providing a primary school.</p>
+						</article>
+						
+						<article>
+							<h2>Citizen Panelist | <a class="noLink" href="https://ec.europa.eu/info/strategy/priorities-2019-2024/new-push-european-democracy/conference-future-europe_en">Conference on the Future of Europe</a></h2>
+							<p class="subDetails">Strasbourg, Florence, Brussels - 2021–2022</p>
+							<p>I partook in a citizen-led series of debates and discussions that ran from April 2021 to May 2022 and enabled people from across Europe to share their ideas and help shape our common future.</p>
+							<p>Because climate change is a must-solve topic to me, this was the focus of my efforts. Eventually, I successfully inspired the rest of my team in such a way that my proposal to EU lawmakers eventually made the cut: I proposed law changes on taxing negative externalities of agricultural activity (e.g. greenhouse gas emissions, use of pesticides, water overuse, long-haul transport, etc.) based on their environmental impact (proposal 30.2).</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Technical</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Gesture Tracking Library</h2>
+							<p>Writing libraries in C++ to recognize and manipulate artistic gestures. Working with gesture controllers such as Kinect, LeapMotion and Sketch tablet. Used Kernel convolution (OpenCV) to detect edges, corners, defined features and optical flow. Algorithms to translate data into different domains (sound to animation).</p>
+						</article>
+						
+						<article>
+							<h2>Audio Analysis</h2>
+							<p>Detect audio features: Frequency centroids, busyness, silences. Spectral components: formants, melodic spectrum, Vowel extraction and Fourier resynthesis. Merging features from different audio files into one. Wave shaping using custom dynamic-stochastic-synthesis.</p>
+						</article>
+						
+						<article>
+							<h2>Open Source Contributions</h2>
+							<p>PRs to Neovim plugins, PRs to Tree Sitter, Bug tracking in AURs, PD Externals, OpenFrameworks addons for working with Threaded Features.</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Teaching</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Workshop | TBA Barcelona</h2>
+							<p class="subDetails">Barcelona, Spain - 2026</p>
+							<p>Sound & Space Workshop Series. Intensive spatial audio training including acousmatrix, soundspace theory, microphone techniques. Sharing experience working with analog synthesizers, extended range violin, electroacoustic ensembles.</p>
+						</article>
+						
+						<article>
+							<h2>Youth Technology Mentor | <a class="noLink" href="https://jugendhackt.org/">Jugend Hackt</a></h2>
+							<p class="subDetails">Berlin, Germany - 2018–present</p>
+							<p>Mentoring young technologists (ages 12-18) in creative coding, electronics, sound design. Workshop topics: Arduino, live coding, real-time video AI, generative art. Organized first underground youth hackathon in Berlin with 365 signups, 80 mentorship submissions. Led Real-time Video AI/AR Workshop on Generative AI live streaming platform. Mentored Twinthesizer workshop: real-time tweet sentiment sonification.</p>
+						</article>
+						
+						<article>
+							<h2>Workshop Supervisor | <a class="noLink" href="https://www.deutscheoperberlin.de/">Deutsche Oper Berlin</a></h2>
+							<p class="subDetails">Berlin, Germany - 2019</p>
+							<p>Common Sound Minifestival. Micro-festival for 15+ young artists; Production Assistant. Helped curate 1-week residency exploring transcultural performance and hybrid opera forms. Parametric Point Cloud Modeling with LeapMotion for performance.</p>
+						</article>
+						
+						<article>
+							<h2>Music Educator | Private Teaching</h2>
+							<p class="subDetails">Various Locations - 2011–present</p>
+							<p>Teaching improvisation to preschool and primary school students (2014–2017). Private violin instruction (2011–present).</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Selected ArtScience Projects</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>WANDERING THE PIANO</h2>
+							<p class="subDetails">La Biennale di Venezia Musica (IT) - 2023</p>
+							<p>Sound installation / Multichannel spatial performance (16-channel). Selected as youngest artist of the festival. Awarded artistic residency under curation of Lucia Ronchetti with supervision of Miller Puckette, Gerfried Stocker (Ars Electronica), and Ali Nikrang.</p>
+							<p><a href="https://www.youtube.com/watch?v=dts4YQDgXVw">View Documentation</a></p>
+						</article>
+						
+						<article>
+							<h2>WANDERING THE SOUNDS OF LANGUAGES</h2>
+							<p class="subDetails">Institute of Sonology (NL) - 2025</p>
+							<p>Interactive sound/language installation + Website interface / research concert. Curation and analysis of recordings of Aesop's fable in 22 highly diverse languages. Collective retelling of the story for an installation on utterance level. Concert-research presentation combining field recordings with live phonetic sonification.</p>
+						</article>
+						
+						<article>
+							<h2>GAME OF LIFE :: ZUNGENTANZ</h2>
+							<p class="subDetails">Wave Field Synthesis System (NL) - 2025</p>
+							<p>192-channel fixed media (6'). Spatial mapping of vowel positions to physical coordinates using Wave Field Synthesis, extending micro-choreographies of speech articulation and the mechanics of resonant acoustic memory within the oral cavity.</p>
+						</article>
+						
+						<article>
+							<h2>GAME OF LIFE :: QUICKSEND</h2>
+							<p class="subDetails">Wave Field Synthesis System (NL) - 2023</p>
+							<p>192-channel live coding. Live-coded performance utilizing an audio feedback algorithm in search of the border between noise and tone.</p>
+						</article>
+						
+						<article>
+							<h2>01001100.mov</h2>
+							<p class="subDetails">Germany - 2022–2023</p>
+							<p>Composition for choreography (Extended-range violin + dance) | 12′15. Collaboration with contemporary dancer and choreographer Adithi exploring everyday gestures through music and movement.</p>
+						</article>
+						
+						<article>
+							<h2>CONTOUR & FEATURE TRACKER</h2>
+							<p class="subDetails">Ongoing - 2024+</p>
+							<p>Real-time computer vision code for performance (openFrameworks / C++). Reference implementation of ongoing work with openCV API using contour-finder algorithm and Shi-Tomasi Algorithm. All processing done parallelly using POCO thread library.</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Awards & Honors</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<ul class="exhibitions">
+							<li>2025 - Audio Developer Conference Diversity Scholarship | Bristol, UK</li>
+							<br>
+							<li>2023 - La Biennale di Venezia Musica, Selected Artist | Venice, Italy</li>
+							<br>
+							<li>2022 - Excellence Scholarship (€15,000) | The Hague, NL</li>
+							<br>
+							<li>2021 - First Prize, German National Composition Competition | Berlin, DE</li>
+							<br>
+							<li>2020 - First Prize, Bundeswettbewerb Jugend Komponiert | Schloss Weikersheim, DE</li>
+							<br>
+							<li>2019 - Scholarship, School for Poetic Computation (Workshop: CW&T) | NYC/online</li>
+							<br>
+							<li>2019 - MIT Media Lab's Hackathon Arts Participant | Cambridge, MA</li>
+							<br>
+							<li>2018 - First Prize, Jugend Hackt Hackathon | Berlin, DE</li>
+							<br>
+							<li>2018 - Regional Winner, Jugend forscht Research Competition | Berlin, DE</li>
+							<br>
+							<li>2016 - WWDC Scholarship Recipient | Cupertino, CA</li>
+							<br>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Selected Publications</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<ul class="exhibitions">
+							<li>Real-time Multi-threaded Facial Movement Analysis for Phonetic Research (forthcoming)</li>
+							<br>
+							<li>Bachelor's Thesis: Wandering the Sounds of Languages, Institute of Sonology (2025)</li>
+							<br>
+							<li>Music History of Microtonality Vol. 1, Self-published (2022)</li>
+							<br>
+							<li>Editorial contribution and proofreading, MusikTexte (2021)</li>
+							<br>
+							<li>Audio Mosaicing & Nonstandard Synthesis Tools Presentation, Petersburg Art Space (2025)</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<section>
+					<div class="sectionTitle">
+						<h1>Skills & Personal</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Languages</h2>
+							<p>English (native), Czech (native), German (native), French (intermediate/advanced), Farsi (beginner)</p>
+						</article>
+						
+						<article>
+							<h2>Additional Skills</h2>
+							<p>Public speaking (Lifeversity certificate + sales/captain functions in different companies), experience with EU legislation</p>
+						</article>
+						
+						<article>
+							<h2>Interests</h2>
+							<p>Cooking (esp. Mediterranean cuisine), Thru-hiking (hiked 4 200+ km trails in the Arctic and the High Sierras), Rowing, other general sports/nature: cycling, bouldering, swimming, running, weight training, survival</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<div class="sectionTitle">
+						<h1>References</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Gerfried Stocker</h2>
+							<p>Ars Electronica, Artistic Director</p>
+							<p><a href="https://ars.electronica.art/about/en/">Ars Electronica</a></p>
+						</article>
+						
+						<article>
+							<h2>Miller Smith Puckette</h2>
+							<p>Professor of Music, UC San Diego</p>
+							<p><a href="http://msp.ucsd.edu/">Miller Puckette</a></p>
+						</article>
+						
+						<article>
+							<h2>Richard Barrett</h2>
+							<p>Institute of Sonology, Composer, Lecturer, Performer</p>
+							<p><a href="https://www.richard-barrett.net/">Richard Barrett</a></p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓          ");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓▓▓▓▓▓▓▓▓      ░░▒▓");
+					console.log("

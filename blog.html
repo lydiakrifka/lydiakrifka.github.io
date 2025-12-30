@@ -1,117 +1,136 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Lydia</title>
-    <script type="module" src="/src/main.ts"></script>
-</head>
-<body>
-    <main class="font-serif text-2xl/8 md:text-4xl/13">
-        <div class="relative w-full h-screen flex items-center">
-            <img class="absolute w-full h-full object-cover" src="./src/images/_DSC6046.JPG" srcset="
-            ./src/images/_DSC6046.JPG 1024w,
-            ./src/images/_DSC6046.JPG 1920w
-          " sizes="50vw" alt="Blog - Lydia Krifka-Dobes" />
-            <h1 class="text-white italic relative z-10 px-4 md:px-8 py-5 font-swash antialiased text-5xl md:text-7xl">
-                Blog
-            </h1>
-        </div>
-        <div class="p-4 md:p-8">
-            <!-- BACK TO HOME LINK -->
-            <div class="pb-10 mb-10">
-                <p class="[&_a]:hover:italic">
-                    <a href="./index.html" class="text-red font-bold">← Back to Home</a>
-                </p>
-            </div>
-            
-            <!-- BLOG ENTRIES SECTION -->
-            <div class="pb-10 mb-10 border-b-10 border-red">
-                <h2 class="mb-20 italic">Blog Entries</h2>
-                <div class="[&_a]:hover:italic space-y-16">
-                    
-                    <!-- Blog Entry 1 -->
-                    <article class="border-b-4 border-lavender pb-10">
-                        <h3 class="font-bold mb-4 text-3xl md:text-5xl">Entry Title Here</h3>
-                        <p class="text-xl md:text-2xl text-gray-600 mb-6">Date: Month Day, Year</p>
-                        <div class="space-y-4">
-                            <p>
-                                Your blog entry content goes here. This is where you can share your thoughts, 
-                                reflections on your work, research updates, or any other content you'd like to post.
-                            </p>
-                            <p>
-                                You can add multiple paragraphs, just like in the main page. The formatting 
-                                will remain consistent with your portfolio's aesthetic.
-                            </p>
-                        </div>
-                    </article>
-                    
-                    <!-- Blog Entry 2 -->
-                    <article class="border-b-4 border-blue pb-10">
-                        <h3 class="font-bold mb-4 text-3xl md:text-5xl">Another Entry Title</h3>
-                        <p class="text-xl md:text-2xl text-gray-600 mb-6">Date: Month Day, Year</p>
-                        <div class="space-y-4">
-                            <p>
-                                Second blog entry content. You can discuss your artistic process, 
-                                share insights from recent performances, or document your research journey.
-                            </p>
-                            <p>
-                                Each entry can be as long or short as you need. You can also include links to 
-                                external resources, documentation, or recordings of your work.
-                            </p>
-                        </div>
-                    </article>
-                    
-                    <!-- Blog Entry 3 -->
-                    <article class="border-b-4 border-lavender pb-10">
-                        <h3 class="font-bold mb-4 text-3xl md:text-5xl">Third Entry Title</h3>
-                        <p class="text-xl md:text-2xl text-gray-600 mb-6">Date: Month Day, Year</p>
-                        <div class="space-y-4">
-                            <p>
-                                Third blog entry. You can write about technical discoveries, 
-                                philosophical reflections on your work with sound and computation, 
-                                or updates on current projects.
-                            </p>
-                            <p>
-                                The blog maintains the same typographic style and color scheme as your 
-                                main portfolio page for visual consistency.
-                            </p>
-                        </div>
-                    </article>
-                    
-                </div>
-            </div>
-            
-            <div class="border-b-10 border-lavender mb-10"></div>
-            
-            <!-- Footer Section -->
-            <div
-                class="font-serif [&_a]:hover:not-italic md:grid md:grid-cols-2 md:gap-12 bg-pink p-10 rounded-2xl text-black antialiased mb-10">
-                <div class="flex flex-col justify-between mb-6 md:mb-0">
-                    <h3 id="swimmingpool" class="mb-6">errorist</h3>
-                    <div class="italic">
-                        <p><a href="mailto:lydiakrifka@gmail.com">Bookings</a></p>
-                        <p><a href="https://soundcloud.com/grunfeld">Soundcloud</a></p>
-                        <p><a href="https://www.instagram.com/lydia.krifkadobes">Instagram</a></p>
-                    </div>
-                    <div
-                        class="grid grid-cols-2 gap-12 [&_a]:hover:not-italic mt-10 pt-10 border-t-10 border-lavender mb-10">
-                        <p class="font-swash italic">Lydia</p>
-                        <div class="italic">
-                            <p><a href="mailto:lydiakrifka@gmail.com">Mail</a></p>
-                            <p>
-                                <a href="https://soundcloud.com/errorist">Soundcloud</a>
-                            </p>
-                            <p>
-                                <a href="https://pastagang.bandcamp.com/">Bandcamp</a>
-                            </p>
-                            <p><a href="https://www.instagram.com/lydia.krifkadobes/">Instagram</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+<!DOCTYPE html>
+<html id="theDocument">
+	<head>
+	<title>Lydia Krifka-Dobes - Blog</title>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="description" content="Blog of Lydia Krifka-Dobes."/>
+	<meta charset="UTF-8"> 
+	<link rel="icon" href="./src/favicon.svg" type="image/x-icon" />
+	<link type="text/css" rel="stylesheet" href="cv-style.css">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+		function darkToggle() {
+		    var checkBox = document.getElementById("dmToggle");
+		    var theDocument = document.getElementById("theDocument");
+		    let toggleText = document.getElementById("toggleText");
+			  if (checkBox.checked == true){
+			    addClass(theDocument, 'darkMode');
+			    toggleText.innerHTML="Light Mode";
+			  } else {
+			    removeClass(theDocument, 'darkMode');
+			    toggleText.innerHTML="Dark Mode";
+			  }
+		}
+		function hasClass(ele,cls) {
+			  return !!ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+			}
+			function addClass(ele,cls) {
+			  if (!hasClass(ele,cls)) ele.className += " "+cls;
+			}
+			function removeClass(ele,cls) {
+			  if (hasClass(ele,cls)) {
+			    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+			    ele.className=ele.className.replace(reg,' ');
+			  }
+		}
+	</script>
+	</head>
+	<body id="top">
+		<div id="cv" class="instaFade">
+			<div class="mainDetails">
+				<div id="headshot" class="quickFade">
+					<img src="./src/images/_DSC6046.JPG" alt="Lydia Krifka-Dobes" />
+				</div>
+				
+				<div id="name">
+					<h1 class="quickFade delayTwo">Blog</h1>
+					<h2 class="quickFade delayThree">Lydia Krifka-Dobes</h2>
+				</div>
+				
+				<div id="contactDetails" class="quickFade delayFour">
+					<ul>
+					    <li>w: <a href="https://lydiakrifka.github.io/">lydiakrifka.github.io</a></li>
+						<li><a href="./index.html">← Back to Home</a></li>
+						<li><a href="./cv.html">View CV</a></li>
+					</ul>
+					<br><br>
+					<div class="dmContainer">
+						<span id="toggleText">Dark Mode</span>
+						<label class="switch">
+		  					<input id="dmToggle" type="checkbox" onclick="darkToggle()">
+		  						<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="mainArea" class="quickFade delayFive">
+				
+				<!-- Blog Entry 1 -->
+				<section>
+					<div class="sectionTitle">
+						<h1>December 2024</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Entry Title Here</h2>
+							<p class="subDetails">December 30, 2024</p>
+							<p>Your blog entry content goes here. This is where you can share your thoughts, reflections on your work, research updates, or any other content you'd like to post.</p>
+							<p>You can add multiple paragraphs. The formatting will remain consistent with the CV's aesthetic using Fletcher's design style.</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<!-- Blog Entry 2 -->
+				<section>
+					<div class="sectionTitle">
+						<h1>November 2024</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Another Entry Title</h2>
+							<p class="subDetails">November 15, 2024</p>
+							<p>Second blog entry content. You can discuss your artistic process, share insights from recent performances, or document your research journey.</p>
+							<p>Each entry can be as long or short as you need. You can also include links to external resources, documentation, or recordings of your work.</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<!-- Blog Entry 3 -->
+				<section>
+					<div class="sectionTitle">
+						<h1>October 2024</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Third Entry Title</h2>
+							<p class="subDetails">October 8, 2024</p>
+							<p>Third blog entry. You can write about technical discoveries, philosophical reflections on your work with sound and computation, or updates on current projects.</p>
+							<p>The blog maintains the same typographic style as the CV page with the blue accent colors for dates and section headers.</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<script>
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓          ");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▒▓");
+					console.log("░░▒▓▓▓▓▓▓▓▓▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+				</script>
+				
+			</div>
+		</div>
+	</body>
 </html>

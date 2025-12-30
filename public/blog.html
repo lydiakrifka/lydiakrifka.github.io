@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html id="theDocument">
+	<head>
+	<title>Lydia Krifka-Dobes - Blog</title>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="description" content="Blog of Lydia Krifka-Dobes."/>
+	<meta charset="UTF-8"> 
+	<link rel="icon" href="./src/favicon.svg" type="image/x-icon" />
+	<link type="text/css" rel="stylesheet" href="cv-style.css">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+		function darkToggle() {
+		    var checkBox = document.getElementById("dmToggle");
+		    var theDocument = document.getElementById("theDocument");
+		    let toggleText = document.getElementById("toggleText");
+			  if (checkBox.checked == true){
+			    addClass(theDocument, 'darkMode');
+			    toggleText.innerHTML="Light Mode";
+			  } else {
+			    removeClass(theDocument, 'darkMode');
+			    toggleText.innerHTML="Dark Mode";
+			  }
+		}
+		function hasClass(ele,cls) {
+			  return !!ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+			}
+			function addClass(ele,cls) {
+			  if (!hasClass(ele,cls)) ele.className += " "+cls;
+			}
+			function removeClass(ele,cls) {
+			  if (hasClass(ele,cls)) {
+			    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+			    ele.className=ele.className.replace(reg,' ');
+			  }
+		}
+	</script>
+	</head>
+	<body id="top">
+		<div id="cv" class="instaFade">
+			<div class="mainDetails">
+				<div id="headshot" class="quickFade">
+					<img src="./src/images/_DSC6046.JPG" alt="Lydia Krifka-Dobes" />
+				</div>
+				
+				<div id="name">
+					<h1 class="quickFade delayTwo">Blog</h1>
+					<h2 class="quickFade delayThree">Lydia Krifka-Dobes</h2>
+				</div>
+				
+				<div id="contactDetails" class="quickFade delayFour">
+					<ul>
+					    <li>w: <a href="https://lydiakrifka.github.io/">lydiakrifka.github.io</a></li>
+						<li><a href="./index.html">← Back to Home</a></li>
+						<li><a href="./cv.html">View CV</a></li>
+					</ul>
+					<br><br>
+					<div class="dmContainer">
+						<span id="toggleText">Dark Mode</span>
+						<label class="switch">
+		  					<input id="dmToggle" type="checkbox" onclick="darkToggle()">
+		  						<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="mainArea" class="quickFade delayFive">
+				
+				<!-- Blog Entry 1 -->
+				<section>
+					<div class="sectionTitle">
+						<h1>251230</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Reflections on Spatial Audio</h2>
+							<p>After spending the last few weeks experimenting with <a class="noLink" href="https://iem.sh/">IEM plugins</a> for spatial audio, I've been thinking about how we perceive sound in multichannel environments. The experience of working with the <a class="noLink" href="https://www.koncon.nl/">WaveField Synthesis system</a> at Game of Life has completely changed my approach to composition.</p>
+							<p>There's something fascinating about the intersection of algorithmic composition and physical space. When you have 192 speakers at your disposal, the question isn't just "what should this sound like?" but "where should this sound exist?"</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<!-- Blog Entry 2 -->
+				<section>
+					<div class="sectionTitle">
+						<h1>241115</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>Notes on Machine Listening</h2>
+							<p>Been diving deep into the work at <a class="noLink" href="https://www.mtg.upf.edu/">Music Technology Group</a> lately. The intersection of machine learning and audio analysis continues to reveal surprising connections between how machines and humans perceive sound.</p>
+							<p>Working on a new project that uses <a class="noLink" href="https://pytorch.org/">PyTorch</a> to analyze formant structures across different languages. The patterns that emerge are beautiful and unexpected.</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<!-- Blog Entry 3 -->
+				<section>
+					<div class="sectionTitle">
+						<h1>241008</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<article>
+							<h2>On Improvisation and Autonomy</h2>
+							<p>Thinking about the relationship between human and machine improvisation. When we talk about <a class="noLink" href="https://supercollider.github.io/">SuperCollider</a> as a performance tool, we're really talking about a collaborative partner that has its own voice.</p>
+							<p>The question isn't about control, but about dialogue. How do we create systems that listen as much as they speak?</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				
+				<script>
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓          ");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓▓▓▓▓▓▓▓▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+					console.log("░░▒▓░   ░░▒▓      ░░▒▓");
+				</script>
+				
+			</div>
+		</div>
+	</body>
+</html>
